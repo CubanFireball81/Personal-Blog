@@ -1,74 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="My Blog">
-    <meta name="keywords" content="Technology, Programming, Web Design">
-    <meta name="author" content="Alejandro Santiago">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Blog Title</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tech Corner</title>
 </head>
 
 <body>
     <!--Header-->
     <div class="header">
-        <h1>Blog Template</h1>
-        <h5>Created by Alejandro Santiago with love.</h5>
+        <h1>Technology Corner</h1>
+        <h5>Created with love by Alejandro Santiago.</h5>
     </div>
-    <!--Top Navbar-->l
+
+    <!--Top Navbar-->
     <div class="topnav">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a role="button" id="myBtn">Subscribe</a>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <div class="container">
+                    <h2>Subscribe for up-to-date Tech News!</h2>
+                    <p>Get fresh tech news straight from the Hottest Source...</p>
+                </div>
+                <div class="container">
+                    Name: <input type="text" placeholder="Name" name="name" required><br><br>
+                    Email: <input type="email" placeholder="Email address" name="mail" required>
+                    <label><br><br>
+                        <input type="checkbox" checked="checked" name="subscribe"> Daily Posts
+                    </label>
+                </div>
+                <div class="container">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
     </div>
 
     <!--Left Column Cards-->
     <div class="row">
-        <div class="leftcolumn">
-            <div class="card">
-                <div class="container">
-                    <a href="" id="url"><h2 id="title"></h2></a>
-                    <h3 id="author"></h3>
-                    <h4 id="description"></h4>
-                    <img class="img" id="urlToImage" src="" alt=""/>
-                    <p id="content"></p>
-                    <p id="source"><h6 id="publishedAt"></h6></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="container">
-                    <a href="" id="url"><h2 id="title"></h2></a>
-                    <h3 id="author"></h3>
-                    <h4 id="description"></h4>
-                    <img class="img" id="urlToImage" src="" alt="" />
-                    <p id="content"></p>
-                    <p id="source">
-                    <h6 id="publishedAt"></h6>
-                    </p>
-                </div>
+        <div class="left-column">
+            <div id="content">
             </div>
         </div>
 
         <!--Right Column Cards-->
-        <div class="rightcolumn">
+        <div class="right-column">
             <div class="card">
                 <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <img src="./img/6.jpg" alt="Photo of me, Alejandro Santiago">
+                <p>I am an aspiring web developer with an interest in Technology, Painting Artwork, and Solving Puzzles.</p>
             </div>
             <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
-                <div class="fakeimg">
-                    <p>Image</p>
-                </div>
+                <h3>Popular Posts</h3>
+                <div id="firstPost"></div>
+                <br>
+                <div id="secondPost"></div>
+                <br>
+                <div id="thirdPost"></div>
+                <br>
             </div>
             <div class="card">
                 <h3>Follow Me</h3>
@@ -78,9 +78,9 @@
     </div>
     <!--Footer-->
     <div class="footer">
-        <h2>Footer</h2>
+        <h2>Copyright 2021 &copy; All articles served from Tech Crunch API.</h2>
     </div>
-<script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

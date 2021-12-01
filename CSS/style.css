@@ -1,22 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
+    font-family: 'Poppins', serif, sans-serif;
     padding: 10px;
-    background: #f1f1f1;
+    background: beige;
 }
 
 p {
-    background-color: lightgrey;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 /* Header/Blog Title */
 .header {
     padding: 30px;
     text-align: center;
-    background: lightseagreen;
+    background: black;
+    border-radius: 15px;
 }
 
 .container {
@@ -24,20 +33,38 @@ p {
 }
 
 .header h1 {
-    font-size: 50px;
+    color: green;
+    font-family: 'Lobster Two', serif, sans-serif;
+    font-size: 68px;
+    font-weight: 700;
 }
+
+.header h5 {
+    color: green;
+    font-family: 'Lobster Two';
+}
+
+/* Style for Subscribe Modal */
+#subscribeModal .modal-header {
+    background-color: #901cad;
+    color: white;
+}
+
+
 
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid greenyellow;
 }
 
 /* Style the topnav links */
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: green;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -45,43 +72,48 @@ p {
 
 /* Change color on hover */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: black;
+    color: greenyellow;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
+.left-column {
     float: left;
     width: 75%;
 }
 
 /* Right column */
-.rightcolumn {
+.right-column {
     float: right;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: beige;
     padding-left: 20px;
 }
 
-/*Image */
-.img {
-    border: thick double grey;
-    border-radius: 10%;
-    width:auto;
-    padding: 0px;
+/*Images */
+img {
+    border: 1px solid greenyellow;
+    border-radius: 15px;
+    box-shadow: 2px 2px #333;
+    transition: transform .2s;
+    width: 100%;
 }
+
+img:hover {
+    transform: scale(1.2);
+}
+
 
 /* Add a card effect for articles */
 .card {
-    background-color:lightseagreen;
+    background-color: black;
+    color: green;
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-}
-
 }
 
 .card:hover {
@@ -100,14 +132,59 @@ p {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: black;
+    color: green;
     margin-top: 20px;
 }
 
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: black;
+    color: green;
+    text-align: justify;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    .leftcolumn,
-    .rightcolumn {
+    .left-column,
+    .right-column {
         width: 100%;
         padding: 0;
     }
