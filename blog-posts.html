@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Tech Corner</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <div class="header">
+        <a href="./index.html"><img src="./img/computer.svg" class="logo" alt="logo"></a>
+        <h1>Technology Corner</h1>
+        <h5>Get updated Tech News Subscribe NOW!</h5>
+    </div>
+
+    <!--Top Navbar-->
+    <div class="topnav">
+        <a href="./index.html">Home</a>
+        <a role="button" id="myBtn">Subscribe</a>
+    </div>
+
+    <!--The Modal-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <div class="container">
+                    <h2>Subscribe for up-to-date Tech News!</h2>
+                    <p>Get fresh tech news straight from the Hottest Source...</p>
+                    <img src="./img/computer.svg" class="logo" id="modalLogo" alt="logo">
+                </div>
+                <div class="container">
+                    Name: <input type="text" class="inputName" placeholder="Name" name="name" required><br>
+                    Email: <input type="email" class="inputEmail" placeholder="Email address" name="mail" required>
+                    <label><br><br>
+                        <input type="checkbox" checked="checked" name="subscribe"> Daily Posts
+                    </label>
+                </div>
+                <div class="container">
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Left Column Cards-->
+    <div class="row">
+        <div class="left-column">
+            <div id="content">
+                <div class="card">
+                    <h1>If we can't design autonomous robots, maybe they can design themselves</h1>
+                    <h3>By: Gideon Kimbrell</h3>
+                    <h3>Published: Dec 1, 2021</h3>
+                    <figure>
+                        <img src="https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1303811813.jpg?w=641"
+                            alt="">
+                        <figcaption>Image Credits: NanoStockk / Getty Images</figcaption>
+                    </figure>
+                    <p>Elon Musk’s recent announcement of an upcoming Tesla Bot — complete with a human form,
+                        “human-level hands” and a
+                        characteristically optimistic delivery date — has garnered a healthy serving of criticism for
+                        good reason.</p>
+                    <p>Among other capabilities, Musk says, the robot will eventually be capable of running errands such
+                        as going to the
+                        grocery store alone. Boston Dynamics, which has developed the most advanced humanoid robot ever
+                        created, has spent more
+                        than a decade working on its Atlas platform. While progress has been impressive, with Atlas
+                        running, jumping and even
+                        dancing in front of tens of millions of YouTube viewers, the company is quick to acknowledge
+                        that the robot is a long
+                        way from performing complex tasks autonomously.</p>
+                    <blockquote>"Creating a robot that can operate on its own would likely require several hundred
+                        “generations” of evolution in which robots perform mutations and combine the most desirable
+                        traits from two different parents." -Gideon Kimbrell
+                    </blockquote>
+                    <p>They concluded that “these examples of experimental evolution with robots verify the power of
+                        evolution by mutation,
+                        recombination and natural selection. In all cases, robots initially exhibited completely
+                        uncoordinated behaviour because
+                        their genomes had random values.”</p>
+                    <p>In sum, the study concluded that “a few hundreds of generations of random mutations and selective
+                        reproduction were
+                        sufficient to promote the evolution of efficient behaviours in a wide range of environmental
+                        conditions.”</p>
+                    <h2>Progress versus perfection</h2>
+                    <p>I think there’s a chance Musk could actually leapfrog the competition in the field of robotics,
+                        but he’ll need some help
+                        from the robots themselves. According to many experts in the evolutionary computation space,
+                        robots capable of
+                        complicated tasks that require constant feedback or learning loops are simply too complex for
+                        humans to design directly
+                        on their own. Instead, the future of robotic development and design could be a product of
+                        “evolution” that has the
+                        robots selecting which features are most useful for a specific outcome.</p>
+                    <p>For the first time in modern history, we have all the necessary building blocks to facilitate
+                        evolutionary robotics:
+                        rapid prototyping and physical reproduction using 3D printing, neural networks for learning and
+                        training, improved
+                        battery life and cheaper materials and much more.</p>
+                    <p class="postURL"><a
+                            href="https://techcrunch.com/2021/12/01/if-we-cant-design-autonomous-robots-maybe-they-can-design-themselves/"
+                            target="_blank">Read the full article on TechCrunch</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Right Column Cards-->
+        <div class="right-column">
+
+            <!--Author Info Card-->
+            <div class="card author-card">
+                <h2>Author Info:</h2>
+                <img src="./img/GideonKimbrell.jpg" alt="Photo of author">
+                <p>Name: Gideon Kimbrell</p>
+                <p>Title: <a href="https://techcrunch.com/">TechCrunch</a> Contributor</p>
+                <p>Current Company: Co-Founder and CEO of <a href="https://inlist.com/">inList</a></p>
+                <p>Short Bio: Serial entrepreneur & software engineer. "Faith makes all things possible."</p>
+            </div>
+
+            <!--Social Media Card-->
+            <div class="card follow-me">
+                <h3>Follow Gideon:</h3>
+                <a href="https://www.facebook.com/gideonkimbrell" target="-blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/gideonkimbrell" target="-blank" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/syragon/" target="-blank" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <h2>Copyright 2021 &copy; by Alejandro Santiago. All articles served from Tech Crunch API.</h2>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

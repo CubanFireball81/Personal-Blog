@@ -1,2 +1,2 @@
 # Personal-Blog
-Udacity project
+This is my first project for the Udacity Front End Web Developer Nanodegree.

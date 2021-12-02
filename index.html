@@ -3,31 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Tech Corner</title>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
     <!--Header-->
     <div class="header">
-        <img src="./img/computer.svg" class="logo" alt="logo">
+        <a href="./index.html"><img src="./img/computer.svg" class="logo" alt="logo"></a>
         <h1>Technology Corner</h1>
-        <h5>Created with love by Alejandro Santiago.</h5>
+        <h5>Get updated Tech News Subscribe NOW!</h5>
     </div>
 
     <!--Top Navbar-->
     <div class="topnav">
-        <a href="#">Home</a>
-        <a href="#">About Me</a>
+        <a href="./index.html">Home</a>
+        <a href="./blog-posts.html">Blog Post</a>
         <a role="button" id="myBtn">Subscribe</a>
     </div>
 
     <!--The Modal-->
     <div id="myModal" class="modal">
-    
+
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -35,10 +35,11 @@
                 <div class="container">
                     <h2>Subscribe for up-to-date Tech News!</h2>
                     <p>Get fresh tech news straight from the Hottest Source...</p>
+                    <img src="./img/computer.svg" class="logo" id="modalLogo" alt="logo">
                 </div>
                 <div class="container">
-                    Name: <input type="text" placeholder="Name" name="name" required><br><br>
-                    Email: <input type="email" placeholder="Email address" name="mail" required>
+                    Name: <input type="text" class="inputName" placeholder="Name" name="name" required><br>
+                    Email: <input type="email" class="inputEmail" placeholder="Email address" name="mail" required>
                     <label><br><br>
                         <input type="checkbox" checked="checked" name="subscribe"> Daily Posts
                     </label>
@@ -50,49 +51,49 @@
         </div>
     </div>
 
-    <!--Left Column Cards-->
-    <div class="row">
-        <div class="left-column">
-            <div id="content">
-            </div>
+    <!-- Cards -->
+    <div class="wrapper">
+        <div class="home-card">
+            <figure>
+                <a href="./blog-posts.html"><img src="./img/GettyImage-Robot-Reading.jpg" alt="Robot Reading"
+                        title="Image Credits: Getty Images"></a>
+                <figcaption>
+                    <p>"If we can't design autonomous robots, <strong>maybe</strong> they can design themselves?"
+                        -Gideon Kimbrell</p>
+                </figcaption>
+            </figure>
         </div>
-
-        <!--Right Column Cards-->
-        <div class="right-column">
-
-            <!--About Me Card-->
-            <div class="card">
-                <h2>About Me</h2>
-                <img src="./img/6.jpg" alt="Photo of me, Alejandro Santiago">
-                <p>I am an aspiring web developer with an interest in Technology, Painting Artwork, and Solving Puzzles.</p>
-            </div>
-
-            <!--Popular Posts Card-->
-            <div class="card">
-                <h3>Popular Posts</h3>
-                <div id="firstPost"></div>
-                <br>
-                <div id="secondPost"></div>
-                <br>
-                <div id="thirdPost"></div>
-                <br>
-            </div>
-
-            <!--Social Media Card-->
-            <div class="card follow-me">
-                <h3>Follow Me:</h3>
-                <a href="https://www.facebook.com/CubanFireball81/" target="-blank" class="fa fa-facebook"></a>
-                <a href="https://www.linkedin.com/in/alejandro-santiago-dev/" target="-blank" class="fa fa-linkedin"></a>
-                <a href="https://github.com/CubanFireball81" target="-blank" class="fa fa-github-alt"></a>
-            </div>
+        <div class="home-card">
+            <figure>
+                <img src="./img/RazerHandheld.jpg" alt="Razer Handheld Device" title="Image Credits: Qualcomm">
+                <figcaption>
+                    <p>"Razer Launches handheld with brand new Snapdragon G3x ship!" -Haje Jan Kamps</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="home-card">
+            <figure>
+                <img src="./img/SquareToBlock.jpg" alt="" title="Image Credits: Joe Raedle / Staff / Getty Images">
+                <figcaption>
+                    <p>"Square is changing its name to Block, effective December 10, 2021." -Amanda Silberling</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="home-card">
+            <figure>
+                <img src="./img/TC-Sessions-Space-2021.png" alt="" title="Image Credits: TechCrunch">
+                <figcaption>
+                    <p>"T-Minus three Days left to save on passes to TC Sessions: Space 2021!" -Alexandra Ames</p>
+                </figcaption>
+            </figure>
         </div>
     </div>
 
     <!--Footer-->
     <div class="footer">
-        <h2>Copyright 2021 &copy; All articles served from Tech Crunch API.</h2>
+        <h2>Copyright 2021 &copy; by Alejandro Santiago. All articles served from Tech Crunch API.</h2>
     </div>
-    <script src="JS/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
